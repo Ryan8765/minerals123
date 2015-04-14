@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
-	
+	//show and hide subscribe popup on .bookmark-button click 
+	$('.bookmark-button').on('click', function() {
+		$('.popup').fadeIn(1000);
+	});
+
+	$('.exit-button').on('click', function() {
+		$('.popup').hide();
+	});
+
 	//dropdown menu pluggin
 	$('.menu').dropit();
 
@@ -68,14 +76,19 @@ $(document).ready(function() {
 	//functions to run on page load
 	showSubscribe.fadeInSubscribe();
 
+
+
 	//functions to run on window resize
 	$(window).resize(function(){
 		showSubscribe.fadeInSubscribe();
 	});
 
+
+
 	//functions to run on window scroll
 	$(window).scroll(function() {
 		showSubscribe.fadeInSubscribe();
 	});
+	
 
 });

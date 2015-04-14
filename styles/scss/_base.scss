@@ -81,15 +81,6 @@ label {
 /* Class
 =====================================*/
 
-#scroll-nav {
-	position:fixed;
-	top:0;
-	left:((100 - $width-wrapper)/2);
-	display:none;
-	background-color:white;
-	z-index:100;
-}
-
 .contact {
 	width:350px;
 	margin-right:auto;
@@ -357,7 +348,14 @@ label {
 
 /* Id
 =====================================*/
-
+#scroll-nav {
+	position:fixed;
+	top:0;
+	left:((100 - $width-wrapper)/2);
+	display:none;
+	background-color:white;
+	z-index:100;
+}
 
 
 
@@ -406,6 +404,59 @@ label {
 .dropit-submenu a {
 	display:block;
     width:100%;
+}
+
+
+/* mailchimp nave styles */
+
+.exit-button {
+	padding-right:10px;
+	padding-top:10px;
+	float:right;
+	font-size:2.4em;
+	color:#1E3368;
+	i.fa.fa-times {
+		color:white;
+		&:hover {
+			cursor:pointer;
+			color: grey;
+		}
+	}
+}
+
+.popup {
+	display:none;
+	background-color: rgba(0,0,0,0.7);
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:1000;
+}
+
+.mailchimp-form {
+	position:relative;
+	margin-top:2em;
+	width:50%;
+	margin-right:auto;
+	margin-left:auto;
+	form {
+		border-radius:10px;
+	}
+}
+
+
+div#mc_embed_signup {
+	border-radius:10px;
+	border:2px solid #1E3368;
+	h2 {
+		font-size:1.8em;
+	}
+
+	h3 {
+		font-size: 1.4em;
+	}
 }
 
 
