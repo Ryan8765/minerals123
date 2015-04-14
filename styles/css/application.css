@@ -291,6 +291,8 @@ label {
     display: inline-block;
     margin-left: 10px;
     font-size: 1.2em; }
+  .nav li ul {
+    display: none; }
 
 .nav-links {
   margin-top: 10px; }
