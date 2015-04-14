@@ -1,7 +1,11 @@
 // ==================================
-// Global Config variables
+// Global Config variables/mixins/extends
 // ==================================
 //$background-color--container:#3F3F3F;
+
+/* Fonts
+=====================================*/
+$width-wrapper: 92%;
 
 /* Fonts
 =====================================*/
@@ -11,6 +15,12 @@
 /* Backgrounds
 =====================================*/
 
+//main box shadow for wrapper/footer
+@mixin boxshadow-main {
+	-moz-box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
+	-webkit-box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
+	box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
+}
 
 
 /* border-colors:

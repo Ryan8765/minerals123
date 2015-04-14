@@ -13,29 +13,43 @@
 	<!-- form styles -->
 	<link href="quform/css/base.css" rel="stylesheet" media="screen">
 	<link href="quform/css/page.css" rel="stylesheet" media="screen">
-
 </head>
 <body>
 	<div class="outer-wrapper">
 		<div class="wrapper">
+			<div id="scroll-nav">
+				<button class="button-scroll">
+					Contact Us
+				</button>
+				<button class="subscribe-button">
+					Bookmark This Site
+				</button>
+			</div>
 			<div class="header">
 				<div class="logo">
 					<img src="images/minerals123-logo.JPG" alt="Buy Mineral Rights Logo">
 				</div>
 				<div class="nav">
 					<div class="nav-contact">
-						<button id="button-scroll">
+						<button class="button-scroll">
 							Contact Us
 						</button>
-
+						<button class="subscribe-button">
+							Bookmark This Site
+						</button>
 					</div>
 					<div class="nav-links">
-						<ul>
+						<ul class="menu">
 							<li>
 								<a href="#">Home</a>
 							</li>
 							<li>
 								<a href="#">Texas</a>
+								<ul>
+						            <li><a href="#">Nacogdoches County</a></li>
+						            <li><a href="#">San Augustine County</a></li>
+						            <li><a href="#">Karnes County</a></li>
+						        </ul>
 							</li>
 							<li>
 								<a href="#">Oklahoma</a>
@@ -45,12 +59,22 @@
 							</li>
 							<li>
 								<a href="#">West Virginia</a>
+								<ul>
+						            <li><a href="#">Wetzel County</a></li>
+						        </ul>
 							</li>
 							<li>
 								<a href="#">North Dakota</a>
 							</li>
 							<li>
 								<a href="#">Other</a>
+								<ul>
+									<li><a href="#">Wyoming</a></li>
+									<li><a href="#">Eagle Ford Shale</a></li>
+						            <li><a href="#">Plays</a></li>
+						            <li><a href="#">Links</a></li>
+						        </ul>
+
 							</li>
 						</ul>
 					</div> <!-- end nav-link -->
@@ -288,12 +312,11 @@
 		</div><!-- end wrapper -->
 
 		<div class="footer">
-			<br>
-			<br>
-			Footer Content<br>
-			Minerals123
+			<div>
+				&copy; 2008-2015 Minerals123.com <br>
+				All Rights Reserved
+			</div>
 		</div><!-- end footer -->
-
 	</div> <!-- end .outer-wrapper -->
 
 	
@@ -303,5 +326,8 @@
 <script src="scripts/app.js"></script>
 <script src="quform/js/plugins.js"></script>
 <script src="quform/js/scripts.js"></script>
+<script src="dropit/dropit.js"></script>
+
+
 </body>
 </html>

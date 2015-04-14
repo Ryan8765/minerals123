@@ -81,6 +81,15 @@ label {
 /* Class
 =====================================*/
 
+#scroll-nav {
+	position:fixed;
+	top:0;
+	left:((100 - $width-wrapper)/2);
+	display:none;
+	background-color:white;
+	z-index:100;
+}
+
 .contact {
 	width:350px;
 	margin-right:auto;
@@ -94,11 +103,18 @@ label {
 }
 
 .footer {
-	height:250px;
+	height:100px;
 	background-color: #666666;
 	text-align:center;
 	color:white;
-	font-size:2em;
+	font-size:1.2em;
+	@include boxshadow-main;
+	
+
+	div {
+		padding-top:30px;
+		vertical-align:middle;
+	}
 }
 
 .form {
@@ -201,10 +217,13 @@ label {
 }
 
 .responsive-image {
+	display:block;
 	border-radius:5px;
 	border:1px solid black;
-	max-width: 100%;
+	max-width: 80%;
 	height:auto;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 // responsive column classes
@@ -287,14 +306,12 @@ label {
 	margin-left:auto;
 	padding:20px;
 	background-color:white;
-	-moz-box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
-	-webkit-box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
-	box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
+	@include boxshadow-main;
 	
 }
 
 .outer-wrapper {
-	width: 92%;
+	width: $width-wrapper;
 	margin-right:auto;
 	margin-left:auto;
 }
@@ -337,6 +354,57 @@ label {
 
 /* Id
 =====================================*/
+
+
+
+
+/* Pluggin css
+=====================================*/
+/*
+ * Dropit v1.1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* dropit nave styles */
+.dropit {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropit .dropit-open .dropit-submenu { 
+    display: block; 
+    border:2px solid #1E3368;
+    background-color: white;
+    font-size: .8em;
+}
+
+.dropit-submenu li {
+    width:200px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+.dropit-submenu a {
+	display:block;
+    width:100%;
+}
+
 
 
 
