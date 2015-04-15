@@ -1,26 +1,17 @@
 $(document).ready(function() {
 
-	//show and hide subscribe popup on .bookmark-button click 
-	$('.bookmark-button').on('click', function() {
-		$('.popup').fadeIn(1000);
-	});
-
-	$('.exit-button').on('click', function() {
-		$('.popup').hide();
-	});
-
-	//dropdown menu pluggin
-	$('.menu').dropit();
 
 
 	//create a popup that blocks user from leaving the website to show the subscribe popup (.popup)
 	localStorage.setItem("alreadyShown", "false");
 	var beforeExit = {
+		mouseHasEntered: false,
 		alreadyShown: false,
 		showPopup: function() {
 			var localAlreadyShown = localStorage.getItem("alreadyShown");
 			//only show the popup once
-			if(this.alreadyShown === false && localAlreadyShown !== "true") {
+			if(this.alreadyShown === false && localAlreadyShown !== "true" && this.mouseHasEntered === true) {
+				$('.outer-wrapper').hide();
 				$('.popup').fadeIn(1000);
 
 				this.alreadyShown = true;
@@ -32,7 +23,7 @@ $(document).ready(function() {
 		}
 	};
 
-	//object to position and fade in subscribe and contact us on page scroll
+	//object to position and fade in subscribe and contact us buttons on page scroll
 	var showSubscribe = {
 		fadedInAlready: false,
 		fadeInSubscribe: function () {
@@ -91,6 +82,26 @@ $(document).ready(function() {
 	});
 
 
+	//show and hide privacy statement on subscribe form popup
+	$('#show-hide-privacy').on('click', function() {
+		$('#privacy-statement').slideToggle(400);
+	});
+
+	//show and hide subscribe popup on .bookmark-button click 
+	$('.bookmark-button').on('click', function() {
+		$('.outer-wrapper').hide();
+		$('.popup').fadeIn(1000);
+		beforeExit.alreadyShown = true;
+	});
+
+	$('.exit-button').on('click', function() {
+		$('.outer-wrapper').show();
+		$('.popup').hide();
+	});
+
+	//dropdown menu pluggin
+	$('.menu').dropit();
+
 	//functions to run on page load
 	showSubscribe.fadeInSubscribe();
 
@@ -111,8 +122,12 @@ $(document).ready(function() {
 
 	//before user exits page 
 	$(window).mousemove(function( event ) {
-		console.log('screen ' + event.clientY);
-  		if(event.clientY < 20) {
+		//make sure mouse has entered page, so as to not show popup when mouse enters
+		if(event.clientY > 20 && beforeExit.mouseHasEntered === false) {
+			beforeExit.mouseHasEntered = true;
+		}
+		//when use moves mouse to address bar show popup
+  		if(event.clientY < 20 && beforeExit.mouseHasEntered === true) {
   			beforeExit.showPopup();
   		}
 	});

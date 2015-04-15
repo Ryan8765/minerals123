@@ -56,6 +56,9 @@ table {
 /* pseudo class colors:
 =====================================*/
 /************Main CSS**************/
+/*pluggin styles at end of document
+ *Sass variables in _config.scss
+*/
 /* Base Elements
 =====================================*/
 * {
@@ -127,6 +130,11 @@ label {
 
 /* Class
 =====================================*/
+.subscribe-logo {
+  text-align: center; }
+  .subscribe-logo img {
+    display: inline-block; }
+
 .contact {
   width: 350px;
   margin-right: auto;
@@ -350,6 +358,14 @@ label {
   background-color: white;
   z-index: 100; }
 
+#privacy-statement {
+  font-size: .7em;
+  width: 200px;
+  margin: 1em auto 1em auto;
+  display: none; }
+  #privacy-statement ul {
+    list-style-type: disc; }
+
 /* Pluggin css
 =====================================*/
 /*
@@ -417,17 +433,15 @@ label {
   display: none;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1000; }
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%; }
 
 .mailchimp-form {
   position: relative;
   margin-top: 2em;
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
   margin-right: auto;
   margin-left: auto; }
   .mailchimp-form form {
