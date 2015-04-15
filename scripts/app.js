@@ -13,6 +13,24 @@ $(document).ready(function() {
 	$('.menu').dropit();
 
 
+	//create a popup that blocks user from leaving the website to show the subscribe popup (.popup)
+	localStorage.setItem("alreadyShown", "false");
+	var beforeExit = {
+		alreadyShown: false,
+		showPopup: function() {
+			var localAlreadyShown = localStorage.getItem("alreadyShown");
+			//only show the popup once
+			if(this.alreadyShown === false && localAlreadyShown !== "true") {
+				$('.popup').fadeIn(1000);
+
+				this.alreadyShown = true;
+				//local storage save for popup
+				if(typeof(Storage) !== "undefined" && localAlreadyShown !== "true") {
+				    localStorage.setItem("alreadyShown", "true");
+				}
+			}
+		}
+	};
 
 	//object to position and fade in subscribe and contact us on page scroll
 	var showSubscribe = {
@@ -89,6 +107,15 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		showSubscribe.fadeInSubscribe();
 	});
-	
 
-});
+
+	//before user exits page 
+	$(window).mousemove(function( event ) {
+		console.log('screen ' + event.clientY);
+  		if(event.clientY < 20) {
+  			beforeExit.showPopup();
+  		}
+	});
+
+
+});//end document.ready

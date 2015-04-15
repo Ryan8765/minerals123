@@ -351,7 +351,7 @@ label {
 #scroll-nav {
 	position:fixed;
 	top:0;
-	left:((100 - $width-wrapper)/2);
+	right:((100 - $width-wrapper)/2);
 	display:none;
 	background-color:white;
 	z-index:100;
@@ -391,9 +391,15 @@ label {
 .dropit .dropit-open .dropit-submenu { 
     display: block; 
     border:2px solid #1E3368;
-    background-color: white;
+    background-color: #1E3368;
     font-size: .8em;
-}
+    a {
+    	color:white;
+    	&:hover {
+    		color: grey;
+    	}
+    }
+}//hello
 
 .dropit-submenu li {
     width:200px;
@@ -426,6 +432,9 @@ label {
 
 .popup {
 	display:none;
+	//IE 8 popup background black
+	background-color:black;
+	//all other browsers background
 	background-color: rgba(0,0,0,0.7);
 	position:fixed;
 	top:0;

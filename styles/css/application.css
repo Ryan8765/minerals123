@@ -345,7 +345,7 @@ label {
 #scroll-nav {
   position: fixed;
   top: 0;
-  left: 4%;
+  right: 4%;
   display: none;
   background-color: white;
   z-index: 100; }
@@ -384,8 +384,12 @@ label {
 .dropit .dropit-open .dropit-submenu {
   display: block;
   border: 2px solid #1E3368;
-  background-color: white;
+  background-color: #1E3368;
   font-size: .8em; }
+  .dropit .dropit-open .dropit-submenu a {
+    color: white; }
+    .dropit .dropit-open .dropit-submenu a:hover {
+      color: grey; }
 
 .dropit-submenu li {
   width: 200px;
@@ -411,6 +415,7 @@ label {
 
 .popup {
   display: none;
+  background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
