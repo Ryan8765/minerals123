@@ -415,9 +415,12 @@ label {
 }
 
 #show-hide-privacy {
+	margin-top:0;
 	a {
 		font-size:15px;
 	}
+
+
 }
 
 /* Media Queries
@@ -606,7 +609,7 @@ label {
 	position:relative;
 	width:100%;
 	max-width:400px;
-	margin:2em auto 2em auto;
+	margin:3.5em auto 2em auto;
 	form {
 		border-radius:10px;
 	}
@@ -709,6 +712,7 @@ div#mc_embed_signup {
     margin:2px 5px;
     text-decoration:none;
     color:#fff;
+    font-size: 16px;
 }
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {
