@@ -1,0 +1,82 @@
+javascript:
+
+//restive.js pixel breakpoints
+	$('body').restive({
+      breakpoints: ['580', '620', '940', '990'],
+      classes: ['css-580', 'css-620', 'css-940', 'css-990']
+	});
+
+//
+
+/* Responsive breakpoints using restive.js
+======================================================*/
+
+// 990 breakpoints
+.css-990 .outer-wrapper,
+.css-940 .outer-wrapper,
+.css-620 .outer-wrapper,
+.css-580 .outer-wrapper {
+	width:100%;
+}
+
+.css-940 .nav-links,
+.css-620 .nav-links,
+.css-580 .nav-links {
+	display:none;
+}
+
+.css-940 .slicknav_menu,
+.css-620 .slicknav_menu,
+.css-580 .slicknav_menu {
+	display:block;
+}
+
+
+//620 breakpoints
+.css-620 .col-33-left.steps,
+.css-620 .col-33-right.steps,
+
+.css-580 .col-33-left.steps,
+.css-580 .col-33-right.steps {
+	width:95%;
+	margin-top:1em;
+	margin-right:auto;
+	margin-left:auto;
+	float:none;
+}
+
+.css-620 .col-50-left,
+.css-620 .col-50-right,
+
+.css-580 .col-50-left,
+.css-580 .col-50-right, {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+
+.css-620 .nav,
+.css-580 .nav {
+	display:none;
+}
+
+//580 breakpoints
+.css-580 .col-single {
+	width: 95%;
+}
+
+.css-580 .nav-contact {
+	display:none;
+}
+
+.css-580 .logo {
+	width:200px;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.css-580 .scroll-nav {
+	display:none;
+}

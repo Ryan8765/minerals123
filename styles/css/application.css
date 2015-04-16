@@ -395,62 +395,50 @@ label {
 #show-hide-privacy a {
   font-size: 15px; }
 
-/* Responsive breakpoints using restive.js
+/* Media Queries
 ======================================================*/
-.css-990 .outer-wrapper,
-.css-940 .outer-wrapper,
-.css-620 .outer-wrapper,
-.css-580 .outer-wrapper {
-  width: 100%; }
+@media (max-width: 990px) {
+  .outer-wrapper {
+    width: 100%; } }
+@media (max-width: 940px) {
+  .nav-links {
+    display: none; }
 
-.css-940 .nav-links,
-.css-620 .nav-links,
-.css-580 .nav-links {
-  display: none; }
+  .slicknav_menu {
+    display: block; } }
+@media (max-width: 620px) {
+  .col-33-left.steps,
+  .col-33-right.steps {
+    width: 95%;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    float: none; }
 
-.css-940 .slicknav_menu,
-.css-620 .slicknav_menu,
-.css-580 .slicknav_menu {
-  display: block; }
+  .col-50-left,
+  .col-50-right {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
 
-.css-620 .col-33-left.steps,
-.css-620 .col-33-right.steps,
-.css-580 .col-33-left.steps,
-.css-580 .col-33-right.steps {
-  width: 95%;
-  margin-top: 1em;
-  margin-right: auto;
-  margin-left: auto;
-  float: none; }
+  .nav {
+    display: none; } }
+@media (max-width: 620px) {
+  .col-single {
+    width: 95%; }
 
-.css-620 .col-50-left,
-.css-620 .col-50-right,
-.css-580 .col-50-left,
-.css-580 .col-50-right {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  float: none; }
+  .nav-contact {
+    display: none; }
 
-.css-620 .nav,
-.css-580 .nav {
-  display: none; }
+  .logo {
+    width: 200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto; }
 
-.css-580 .col-single {
-  width: 95%; }
-
-.css-580 .nav-contact {
-  display: none; }
-
-.css-580 .logo {
-  width: 200px;
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
-
-.css-580 .scroll-nav {
-  display: none; }
-
+  .scroll-nav {
+    display: none; } }
 /* Pluggin css
 ======================================================*/
 /*******************dropit nav styles******************/
