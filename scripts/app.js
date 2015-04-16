@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
-
+	//slick-nav pluggin initialization
+	$(function(){
+		$('.menu').slicknav();
+	});
 
 	//create a popup that blocks user from leaving the website to show the subscribe popup (.popup)
-	localStorage.setItem("alreadyShown", "false");
+	// localStorage.setItem("alreadyShown", "false");
 	var beforeExit = {
 		mouseHasEntered: false,
 		alreadyShown: false,
@@ -77,8 +80,8 @@ $(document).ready(function() {
 
 	//restive.js pixel breakpoints
 	$('body').restive({
-      breakpoints: ['240', '320','400', '480', '640', '960'],
-      classes: ['css-240', 'css-320', 'css-400', 'css-480', 'css-640', 'css-960']
+      breakpoints: ['580', '620', '940', '990'],
+      classes: ['css-580', 'css-620', 'css-940', 'css-990']
 	});
 
 
@@ -122,12 +125,13 @@ $(document).ready(function() {
 
 	//before user exits page 
 	$(window).mousemove(function( event ) {
+		var mouseTriggerSet = beforeExit.mouseHasEntered;
 		//make sure mouse has entered page, so as to not show popup when mouse enters
-		if(event.clientY > 20 && beforeExit.mouseHasEntered === false) {
+		if(event.clientY > 20 && mouseTriggerSet === false) {
 			beforeExit.mouseHasEntered = true;
 		}
-		//when use moves mouse to address bar show popup
-  		if(event.clientY < 20 && beforeExit.mouseHasEntered === true) {
+		//when user moves mouse to address bar show popup
+  		if(event.clientY < 20 && mouseTriggerSet === true) {
   			beforeExit.showPopup();
   		}
 	});
