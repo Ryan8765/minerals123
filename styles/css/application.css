@@ -130,6 +130,21 @@ label {
 
 /* Class
 =====================================*/
+.subscribe-btn-mobile {
+  display: none; }
+
+.contact-btn-mobile {
+  display: none;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 3px; }
+  .contact-btn-mobile button {
+    z-index: 10000;
+    border: none;
+    height: 50px; }
+
 .exit-button {
   padding-right: 10px;
   padding-top: 10px;
@@ -159,8 +174,7 @@ label {
   max-width: 350px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 2em;
-  border: 1px solid red; }
+  margin-bottom: 2em; }
   .contact img {
     max-width: 100%;
     height: auto;
@@ -407,6 +421,12 @@ label {
     display: none; }
 
   .slicknav_menu {
+    display: block; }
+
+  .contact-btn-mobile {
+    display: block; }
+
+  .subscribe-btn-mobile {
     display: block; } }
 @media (max-width: 620px) {
   .col-33-left.steps,
