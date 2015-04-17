@@ -458,14 +458,6 @@ label {
 	.slicknav_menu {
 		display:block;
 	}
-
-	.contact-btn-mobile {
-		display:block;
-	}
-
-	.subscribe-btn-mobile {
-		display:block;
-	}
 }
 
 @media (max-width:620px) {
@@ -511,6 +503,13 @@ label {
 		display:none;
 	}
 
+	.contact-btn-mobile {
+		display:block;
+	}
+
+	.subscribe-btn-mobile {
+		display:block;
+	}
 }
 
 // 990 breakpoints

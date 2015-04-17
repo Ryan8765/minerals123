@@ -421,12 +421,6 @@ label {
     display: none; }
 
   .slicknav_menu {
-    display: block; }
-
-  .contact-btn-mobile {
-    display: block; }
-
-  .subscribe-btn-mobile {
     display: block; } }
 @media (max-width: 620px) {
   .col-33-left.steps,
@@ -460,7 +454,13 @@ label {
     margin-right: auto; }
 
   .scroll-nav {
-    display: none; } }
+    display: none; }
+
+  .contact-btn-mobile {
+    display: block; }
+
+  .subscribe-btn-mobile {
+    display: block; } }
 /* Pluggin css
 ======================================================*/
 /*******************dropit nav styles******************/
