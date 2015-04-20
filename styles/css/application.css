@@ -130,6 +130,35 @@ label {
 
 /* Class
 =====================================*/
+.top-marg {
+  margin-top: 3em; }
+
+.testamonial {
+  -moz-box-shadow: 10px 10px 10px #949292;
+  -webkit-box-shadow: 10px 10px 10px #949292;
+  box-shadow: 10px 10px 10px #949292;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  background-color: #121F40;
+  color: white; }
+  .testamonial i {
+    font-size: 6em;
+    color: white; }
+  .testamonial .test-name {
+    font-weight: bolder;
+    font-size: 1.3em; }
+  .testamonial .test-title {
+    font-style: italic; }
+
+.indent {
+  text-indent: 50px; }
+
+.bulleted {
+  list-style-type: disc;
+  list-style-position: inside; }
+
 .subscribe-btn-mobile {
   display: none; }
 
@@ -275,7 +304,6 @@ label {
 .responsive-image {
   display: block;
   border-radius: 5px;
-  border: 1px solid black;
   max-width: 80%;
   height: auto;
   margin-right: auto;
@@ -352,6 +380,7 @@ label {
 
 .outer-wrapper {
   width: 92%;
+  max-width: 2500px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -366,26 +395,6 @@ label {
 
 .slicknav_menu {
   display: none; }
-
-.red {
-  width: 53%;
-  margin-right: 2%;
-  height: 300px;
-  border: 1px solid red;
-  background-color: red;
-  float: left; }
-
-.blue {
-  width: 45%;
-  height: 300px;
-  border: 1px solid blue;
-  background-color: blue;
-  float: left; }
-
-.css-960 .red,
-.css-640 .red,
-.css-480 .red {
-  width: 100%; }
 
 /* Id
 ==============================================*/
@@ -461,7 +470,7 @@ label {
 
   .subscribe-btn-mobile {
     display: block; } }
-/* Pluggin css
+/* Pluggins css
 ======================================================*/
 /*******************dropit nav styles******************/
 .dropit {
