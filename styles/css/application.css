@@ -481,6 +481,9 @@ label {
 
   .subscribe-btn-mobile {
     display: block; } }
+@media (max-width: 450px) {
+  .indent {
+    text-indent: 5px; } }
 /* Pluggins css
 ======================================================*/
 /*******************dropit nav styles******************/
