@@ -42,24 +42,25 @@ button:hover {
 }
 
 h1 {
-	background: -webkit-linear-gradient(#1E3368, #C0C7D9); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#1E3368, #C0C7D9); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#1E3368, #C0C7D9); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#1E3368, #C0C7D9); /* Standard syntax */
+	background-color: #1E3368; 
+	// background: -webkit-linear-gradient(#1E3368, #C0C7D9); 
+	// background: -o-linear-gradient(#1E3368, #C0C7D9); 
+	// background: -moz-linear-gradient(#1E3368, #C0C7D9); 
+	// background: linear-gradient(#1E3368, #C0C7D9); 
 	width:60%;
 	color:white;
 	padding:20px;
 	border: 1px solid #8C8C8C;
 	border-radius:20px;
 	margin: 2.5em auto 1.5em auto;
-	font-size: 2.5em;
-	line-height:1;
+	font-size: 1.8em;
+	line-height:1.4;
 }
 
 h2 {
 	margin-top: 2.5em;
 	margin-bottom:1.5em;
-	font-size: 2em;
+	font-size: 1.8em;
 	line-height:1.3;
 }
 

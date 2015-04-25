@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 
 	//create a popup that blocks user from leaving the website to show the subscribe popup (.popup)
-	// localStorage.setItem("alreadyShown", "false");
+	//localStorage.setItem("alreadyShown", "false");
 	var beforeExit = {
 		mouseHasEntered: false,
 		alreadyShown: false,
