@@ -33,7 +33,7 @@ button {
 	background-color:#1E3368;
 	padding:5px 10px 5px 10px;
 	border: 2px solid #7994D7;
-	border-radius:3px;
+	@include border-radius(3px);
 }
 
 button:hover {
@@ -43,15 +43,11 @@ button:hover {
 
 h1 {
 	background-color: #1E3368; 
-	// background: -webkit-linear-gradient(#1E3368, #C0C7D9); 
-	// background: -o-linear-gradient(#1E3368, #C0C7D9); 
-	// background: -moz-linear-gradient(#1E3368, #C0C7D9); 
-	// background: linear-gradient(#1E3368, #C0C7D9); 
 	width:60%;
 	color:white;
 	padding:20px;
 	border: 3px solid #8C8C8C;
-	border-radius:20px;
+	@include border-radius(20px);
 	margin: 2.5em auto 1.5em auto;
 	font-size: 1.8em;
 	line-height:1.4;
@@ -92,6 +88,36 @@ label {
 }
 /* Class
 =====================================*/
+.county-list {
+	display:inline-block;
+	max-width:95%;
+	@include border-radius(10px);
+	@include boxshadow-steps;
+	border:2px solid grey;
+	li {
+		margin: 1.5em 2em 1.5em 2em;
+	}
+	
+	a {
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: grey;
+	}
+}
+
+.states-image {
+	@include boxshadow-main;
+	width:200px;
+	margin-right:auto;
+	margin-left:auto;
+	img {
+		border:2px solid grey;
+		max-width:200px;
+		height:auto;
+	}
+}
 
 .bold {
 	font-weight:bolder;
@@ -110,7 +136,7 @@ label {
 	margin-top:5em;
 	margin-bottom:3em;
 	padding:10px 10px 10px 10px;
-	border-radius:20px;
+	@include border-radius(20px);
 	background-color:#121F40;
 	color:white;
 	i {
@@ -147,7 +173,7 @@ label {
 	position:fixed;
 	top:0;
 	left:0;
-	border-radius:3px;
+	@include border-radius(3px);
 	button {
 		z-index:10000;
 		border:none;
@@ -199,7 +225,7 @@ label {
 		max-width:100%;
 		height:auto;
 		border: 2px solid #121F40;
-		border-radius:5px;
+		@include border-radius(5px);
 	}
 }
 
@@ -218,7 +244,7 @@ label {
 }
 
 .form {
-	border-radius:5px;
+	@include border-radius(5px);
 	text-align:left;
 	padding:20px;
 	display: inline-block;
@@ -228,7 +254,7 @@ label {
 
 	input {
 		font-size:1.2em;
-		border-radius:5px;
+		@include border-radius(5px);
 		line-height:1.4;
 	}
 
@@ -249,7 +275,7 @@ label {
 }
 .selling-points {
 	border: 2px solid #121F40;
-	border-radius:5px;
+	@include border-radius(5px);
 	background-color:#E8E8E8;
 
 	li {
@@ -273,7 +299,7 @@ label {
 
 	img {
 		max-width:100%;
-		border-radius:5px;
+		@include border-radius(5px);
 	}
 }
 
@@ -304,8 +330,9 @@ label {
 .steps {
 	padding:0 10px 10px 10px;
 	border: 2px solid #121F40;
-	border-radius:5px;
-	background-color:#E8E8E8;
+	@include border-radius(5px);
+	// background-color:#E8E8E8;
+	@include boxshadow-steps;
 }
 
 .sub-heading {
@@ -318,7 +345,7 @@ label {
 
 .responsive-image {
 	display:block;
-	border-radius:5px;
+	@include border-radius(5px);
 	max-width: 80%;
 	height:auto;
 	margin-right:auto;
@@ -444,7 +471,7 @@ label {
 	display:none;
 	// background-color:white;
 	z-index:100;
-	border-radius:3px;
+	@include border-radius(3px);
 	button {
 		background-color:#15A500;
 		border:2px solid white;
@@ -564,6 +591,10 @@ label {
 		padding-right: 5px;
 		padding-left: 5px;
 	}
+
+	.responsive-image {
+		max-width:100%;
+	}
 }
 
 
@@ -590,8 +621,11 @@ label {
 }
 .dropit .dropit-open .dropit-submenu { 
     display: block; 
-    border:2px solid #1E3368;
-    background-color: #1E3368;
+    border:2px solid #A6A6A6;
+    @include border-radius(10px);
+    //EI8 Support
+    background-color:#1E3368;
+    background-color: rgba(30, 51, 104, .9);
     font-size: .8em;
     a {
     	color:white;
@@ -622,7 +656,7 @@ label {
 	max-width:400px;
 	margin:3.5em auto 2em auto;
 	form {
-		border-radius:10px;
+		@include border-radius(10px);
 	}
 }
 

@@ -6,18 +6,10 @@
 	<meta name="description" content="Minerals123.com buys mineral rights, especially Haynesville shale and Eagle Ford shale, North Louisiana and Texas">
 	<meta name="keywords" content="buy oil, buy gas, mineral, rights, oil royalties, haynesville shale, eagle ford shale, eagle ford, land, property, Louisiana, Caddo, Bossier, DeSoto, Red River, Webster, Sabine, parish, haynesville, shale, Harrison, Shelby, Panola, Rusk, San Augustine, Nacogdoches">
 	<title>Minerals123 | Sell Mineral Rights | We Buy Mineral Rights</title>
-	<!-- fonts -->
-	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:700' rel='stylesheet' type='text/css'>
-	<!-- font awesome -->
-	<link rel="stylesheet" href="styles/fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-	<!-- style sheets -->
-	<link href="styles/css/application.css" rel="stylesheet" media="screen">
-	<!-- form styles -->
-	<link href="quform/css/base.css" rel="stylesheet" media="screen">
-	<link href="quform/css/page.css" rel="stylesheet" media="screen">
-	<!-- mailchimp -->
-	<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
+	<!-- load links -->
+	<?php include 'links.html' ?>
+
 </head>
 <body>
 	<div class="outer-wrapper">
@@ -30,64 +22,7 @@
 					Bookmark This Site
 				</button>
 			</div>
-			<div class="header">
-				<div class="logo">
-					<img src="images/minerals123-logo.JPG" alt="Buy Mineral Rights Logo">
-				</div>
-				<div class="nav">
-					<div class="nav-contact">
-						<button class="button-scroll">
-							Contact Us
-						</button>
-						<button class="bookmark-button">
-							Bookmark This Site
-						</button>
-					</div>
-					<div class="nav-links">
-						<ul class="menu">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="index.html">Louisiana</a>
-							</li>
-							<li>
-								<a href="#">Texas</a>
-								<ul>
-						            <li><a href="sell_mineral_rights_nacogdoches_county_texas.html">Nacogdoches County</a></li>
-						            <li><a href="sell-mineral-rights-san-augustine-county-texas.html">San Augustine County</a></li>
-						            <li><a href="#">Karnes County</a></li>
-						        </ul>
-							</li>
-							<li>
-								<a href="#">Oklahoma</a>
-							</li>
-							<li>
-								<a href="#">Pennsylvania</a>
-							</li>
-							<li>
-								<a href="#">West Virginia</a>
-								<ul>
-						            <li><a href="#">Wetzel County</a></li>
-						        </ul>
-							</li>
-							<li>
-								<a href="#">North Dakota</a>
-							</li>
-							<li>
-								<a href="#">Other</a>
-								<ul>
-									<li><a href="sell-wyoming-mineral-rights.html">Wyoming</a></li>
-									<li><a href="eaglefordshalemineralrights.html">Eagle Ford Shale</a></li>
-						            <li><a href="#">Plays</a></li>
-						            <li><a href="#">Links</a></li>
-						        </ul>
-
-							</li>
-						</ul>
-					</div> <!-- end nav-link -->
-				</div>  <!-- end nav -->
-			</div> <!-- ender header -->
+			<?php include 'navigation.html' ?>
 			<!-- ***** End Navigation and Header ******* -->
 
 
@@ -401,8 +336,7 @@
 	</div>  <!-- end .popup -->
 	<!-- **** End MailChimp Form **** -->
 
-<script src="scripts/builds/plugins.js"></script>
-<script src="scripts/app.js"></script>
+<script src="scripts/app.min.js"></script>
 <script src="quform/js/plugins.js"></script>
 <script src="quform/js/scripts.js"></script>
 
