@@ -229,17 +229,44 @@ label {
 	}
 }
 
+.logo-hand {
+	width:83px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
 .footer {
-	height:100px;
-	background-color: #666666;
+	background-color: #3B3B3B;
 	text-align:center;
 	color:white;
-	font-size:1.2em;
+	font-size:1em;
+	padding-bottom:50px;
+	padding-top:10px;
 	@include boxshadow-main;
+	img {
+		@include border-radius(3px);
+	}
 
 	div {
 		padding-top:30px;
 		vertical-align:middle;
+	}
+
+	li {
+		display:inline-block;
+	}
+}
+
+.footer-links {
+	padding:5px;
+	font-size:1em;
+	a {
+		color:white;
+		text-decoration:none;
+	}
+	
+	a:hover {
+		color:grey;
 	}
 }
 

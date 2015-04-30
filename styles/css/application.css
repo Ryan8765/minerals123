@@ -260,18 +260,39 @@ label {
     -moz-border-radius: 5px;
     border-radius: 5px; }
 
+.logo-hand {
+  width: 83px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .footer {
-  height: 100px;
-  background-color: #666666;
+  background-color: #3B3B3B;
   text-align: center;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
+  padding-bottom: 50px;
+  padding-top: 10px;
   -moz-box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
   -webkit-box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey;
   box-shadow: 12px 0 15px -4px grey, -12px 0 15px -4px grey; }
+  .footer img {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
   .footer div {
     padding-top: 30px;
     vertical-align: middle; }
+  .footer li {
+    display: inline-block; }
+
+.footer-links {
+  padding: 5px;
+  font-size: 1em; }
+  .footer-links a {
+    color: white;
+    text-decoration: none; }
+  .footer-links a:hover {
+    color: grey; }
 
 .form {
   -webkit-border-radius: 5px;
